@@ -17,19 +17,13 @@ import 'package:tution_attand/screen/teacher/view/teacher_screen.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 final contro=Get.put(AuthController());
-  final usernameController = TextEditingController();
-  final passwordController = TextEditingController();
+
 
   void signUserIn() {
     print('object');
     log('ggg');
-    if(usernameController.text !='' && passwordController.text!='' &&usernameController.text.contains('@gmail.com')){
-            contro.signin(email: usernameController.text, password: passwordController.text);
-          contro.userCheck?Get.to(StudentScreen()): Get.to(TeacherScreen());
-    }
-    else{
-      Get.snackbar('Enter correct email format', 'Entre email and password properly');
-    }
+    contro.signin(email:contro.usernameController.text ,password: contro.passwordController.text);
+    
     
   }
   @override
@@ -53,13 +47,13 @@ final contro=Get.put(AuthController());
             ),
             const SizedBox(height: 25),
             MyTextField(
-              controller: usernameController,
+              controller:contro. usernameController,
               hintText: 'Email',
               obscureText: false,
             ),
             const SizedBox(height: 10),
             MyTextField(
-              controller: passwordController,
+              controller:contro. passwordController,
               hintText: 'Password',
               obscureText: true,
             ),
