@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736071447883",
+    "project_id": "tutionattandance",
+    "storage_bucket": "tutionattandance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736071447883:android:9106085ec8e165e81724ce",
+        "android_client_info": {
+          "package_name": "com.example.tution_attand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA7sIl5P1J1VCe_w8hJzJ1hMuCAax-QrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
